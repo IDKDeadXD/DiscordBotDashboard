@@ -20,7 +20,7 @@ A powerful VPS dashboard for managing multiple Discord bots with Docker containe
 Run this command on your VPS as a regular user (not root):
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/yourusername/discord-bot-dashboard/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/IDKDeadXD/discord-bot-dashboard/main/install.sh | bash
 ```
 
 Or if you have the files locally:

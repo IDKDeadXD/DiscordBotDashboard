@@ -20,7 +20,7 @@ A powerful VPS dashboard for managing multiple Discord bots with Docker containe
 Run this command on your VPS as a regular user (not root):
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/IDKDeadXD/discord-bot-dashboard/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/IDKDeadXD/DiscordBotDashboard/main/install.sh | bash
 ```
 
 Or if you have the files locally:
@@ -37,6 +37,35 @@ The installer will:
 3. Set up the database and environment
 4. Build and start the application
 5. Display the dashboard URL
+
+## Updating
+
+### One-Line Update (Recommended)
+
+To update your dashboard to the latest version:
+
+```bash
+curl -sSL https://raw.githubusercontent.com/IDKDeadXD/DiscordBotDashboard/main/update.sh | bash
+```
+
+Or if you have the files locally:
+
+```bash
+cd /opt/discord-bot-dashboard
+chmod +x update.sh
+./update.sh
+```
+
+The update script will:
+1. Backup your configuration files (.env)
+2. Backup your database
+3. Pull the latest code from GitHub
+4. Update Node.js dependencies
+5. Rebuild the frontend
+6. Restart the service
+7. Keep all your running bots intact
+
+**Note:** Running bots will NOT be affected by the update. Your bot containers will continue running without interruption.
 
 ## Manual Installation
 

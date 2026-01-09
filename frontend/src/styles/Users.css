@@ -1,0 +1,148 @@
+.users-page {
+  max-width: 1200px;
+}
+
+.users-table-container {
+  background: #1a1d29;
+  border: 1px solid #2d3748;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table thead {
+  background: #0f1419;
+}
+
+.users-table th {
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  color: #8b92a7;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.users-table td {
+  padding: 16px 20px;
+  border-top: 1px solid #2d3748;
+  color: #e1e8ed;
+}
+
+.users-table tbody tr {
+  transition: background 0.2s;
+}
+
+.users-table tbody tr:hover {
+  background: #0f1419;
+}
+
+.role-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.role-super_admin {
+  background: #dc268133;
+  color: #dc2681;
+}
+
+.role-admin {
+  background: #667eea33;
+  color: #667eea;
+}
+
+.role-user {
+  background: #8b92a733;
+  color: #8b92a7;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-active {
+  background: #10b98133;
+  color: #10b981;
+}
+
+.status-inactive {
+  background: #ef444433;
+  color: #ef4444;
+}
+
+.table-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-table {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.btn-enable {
+  background: #10b98133;
+  color: #10b981;
+}
+
+.btn-enable:hover {
+  background: #10b981;
+  color: #fff;
+}
+
+.btn-disable {
+  background: #f59e0b33;
+  color: #f59e0b;
+}
+
+.btn-disable:hover {
+  background: #f59e0b;
+  color: #fff;
+}
+
+.btn-delete-small {
+  background: #ef444433;
+  color: #ef4444;
+}
+
+.btn-delete-small:hover {
+  background: #ef4444;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .users-table {
+    font-size: 14px;
+  }
+
+  .users-table th,
+  .users-table td {
+    padding: 12px;
+  }
+
+  .users-table th:nth-child(3),
+  .users-table td:nth-child(3),
+  .users-table th:nth-child(5),
+  .users-table td:nth-child(5) {
+    display: none;
+  }
+}
